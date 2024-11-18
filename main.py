@@ -1,10 +1,10 @@
-from quantumimageencoding import *
+from quantumimageencoding import FRQI, NEQR
 from utils import showdiff
+from PIL import Image
 
-FRQIEncoder = FRQI()
-image1 = FRQIEncoder.preProcessImage(Image.open('./testimages/test8.png').convert('L'))
-FRQIEncoder.encode(image1)
-image2 = FRQIEncoder.decode('aer_simulator', shots=2**24)
+Encoder = NEQR()
+image1 = Encoder.preProcessImage(Image.open('./testimages/test4.png').convert('L'))
+# Encoder.encode(image1)
+# image2 = Encoder.decode('aer_simulator', shots=2**24)
 
-showdiff(FRQIEncoder, image1, image2)
-
+# showdiff(Encoder, image1, image2)
