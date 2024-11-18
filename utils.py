@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from quantumimageencoding import QuantumEncoder
+from quantumimageencoding.BaseQuantumEncoder import QuantumEncoder
 from PIL import Image
 
 def showdiff(Encoder : QuantumEncoder, image1 : Image.Image, image2 : Image.Image):
