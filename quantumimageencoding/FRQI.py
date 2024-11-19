@@ -8,21 +8,6 @@ import numpy
 class FRQI(QuantumEncoder):
     def __init__(self):
         pass
-    
-    def preProcessImage(self, image : Image.Image) -> Image.Image :
-        '''
-            This function makes sure that an image is in the form of 2^nx2^n.
-            This is done since FRQI manages images of these size since it requires
-            correct number of qubits.
-        '''
-        image = image.convert('L')  #Converting to Grayscale
-        img = numpy.array(image)    #Converting image to a numpy array
-        squareSize = max(2**int(numpy.ceil(numpy.log2(image.size[0]))), 2**int(numpy.ceil(numpy.log2(image.size[1]))))  #Calculating size of square to accomodate image
-        new_img = numpy.zeros((squareSize,squareSize))  #Creating an array to store new image
-        for i in range(image.size[1]):
-            for j in range(image.size[0]):
-                new_img[i, j] = img[i, j]
-        return Image.fromarray(new_img)
 
     def encode(self, image : Image.Image) -> None :
         '''
@@ -36,7 +21,7 @@ class FRQI(QuantumEncoder):
         positions = QuantumRegister(controlbits, 'position')
         target = QuantumRegister(1, 'target')
         classical = ClassicalRegister(controlbits+1, 'measure')
-        self.createQuantumCircuit(positions, target, classical)
+        self.Qcirc = self.createQuantumCircuit(positions, target, classical)
 
         #FRQI process starts here
         for i in range(controlbits):
@@ -86,3 +71,6 @@ class FRQI(QuantumEncoder):
         retrieved_image = retrieved_image.astype(numpy.uint8)
         retrieved_image = retrieved_image.reshape((picture_side, picture_side))
         return Image.fromarray(retrieved_image)
+    
+    def detectEdges(self, image : Image.Image):
+        pass

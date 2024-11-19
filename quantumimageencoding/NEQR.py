@@ -9,10 +9,15 @@ class NEQR(QuantumEncoder):
     def __init__(self):
         pass
     
-    def encode(self, image : Image.Image):
+    def encode(self, image : Image.Image) -> None:
         pass
 
-    
+    def decode(self) -> Image.Image:
+        pass
+
+    def detectEdges(self, image : Image.Image) -> Image.Image:
+        pass
+
     # def encode_image_neqr(self, image):
     #     # Convert the image to a NumPy array
     #     img_np = np.array(image)

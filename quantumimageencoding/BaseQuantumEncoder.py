@@ -10,12 +10,30 @@ class QuantumEncoder:
         self.Qcirc : QuantumCircuit = None
 
     def createQuantumCircuit(self, *regs) -> None :
-        self.Qcirc = QuantumCircuit(*regs)
+        return QuantumCircuit(*regs)
+
+    def preProcessImage(self, image : Image.Image) -> Image.Image :
+        '''
+            This function makes sure that an image is in the form of 2^nx2^n.
+            This is done since most encoders manage images of these size since
+            it requires correct number of qubits.
+        '''
+        image = image.convert('L')  #Converting to Grayscale
+        img = numpy.array(image)    #Converting image to a numpy array
+        squareSize = max(2**int(numpy.ceil(numpy.log2(image.size[0]))), 2**int(numpy.ceil(numpy.log2(image.size[1]))))  #Calculating size of square to accomodate image
+        new_img = numpy.zeros((squareSize,squareSize))  #Creating an array to store new image
+        for i in range(image.size[1]):
+            for j in range(image.size[0]):
+                new_img[i, j] = img[i, j]
+        return Image.fromarray(new_img)
 
     def encode(self, image : Image.Image) -> None :
         pass
 
     def decode(self, circuit : QuantumCircuit) -> None:
+        pass
+
+    def detectEdges(self, image:Image.Image):
         pass
 
     def calculateMSE(self, image1 : Image.Image, image2 : Image.Image):
