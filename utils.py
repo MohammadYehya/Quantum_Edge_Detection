@@ -4,7 +4,10 @@ from PIL import Image
 
 def showdiff(Encoder : QuantumEncoder, image1 : Image.Image, image2 : Image.Image):
     print('MSE: ',Encoder.calculateMSE(image1, image2))
-    print('SSI: ', Encoder.calculateSSI(image1, image2))
+    try:
+        print('SSI: ', Encoder.calculateSSI(image1, image2))
+    except:
+        pass
     fig = plt.figure()
     fig.add_subplot(2,1,1)
     plt.imshow(image1, cmap='gray')
