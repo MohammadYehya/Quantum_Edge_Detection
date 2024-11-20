@@ -26,21 +26,17 @@ class QPIE(QuantumEncoder):
         unitaryMatrix = numpy.identity(2**(controlbits+1))
         unitaryMatrix = numpy.roll(unitaryMatrix,1,axis=1)
 
-        positions1 = QuantumRegister(controlbits, 'position1')
-        target1 = QuantumRegister(1, 'target1')
-        classical1 = ClassicalRegister(controlbits+1, 'measure1')
+        positions = QuantumRegister(controlbits, 'position')
+        target = QuantumRegister(1, 'target')
+        classical = ClassicalRegister(controlbits+1, 'measure')
 
-        self.Qcirc = self.createQuantumCircuit(positions1, target1, classical1)
+        self.Qcirc = self.createQuantumCircuit(positions, target, classical)
         self.Qcirc.initialize(h_amplitudes, range(1, controlbits+1))
         self.Qcirc.h(0)
         self.Qcirc.unitary(unitaryMatrix, range(controlbits+1))
         self.Qcirc.h(0)
         
-        positions2 = QuantumRegister(controlbits, 'position2')
-        target2 = QuantumRegister(1, 'target2')
-        classical2 = ClassicalRegister(controlbits+1, 'measure2')
-
-        self.Qcirc2 = self.createQuantumCircuit(positions2, target2, classical2)
+        self.Qcirc2 = self.createQuantumCircuit(positions, target, classical)
         self.Qcirc2.initialize(v_amplitudes, range(1, controlbits+1))
         self.Qcirc2.h(0)
         self.Qcirc2.unitary(unitaryMatrix, range(controlbits+1))
