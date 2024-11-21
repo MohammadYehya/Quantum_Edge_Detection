@@ -12,5 +12,5 @@ def showdiff(Encoder : QuantumEncoder, image1 : Image.Image, image2 : Image.Imag
     fig.add_subplot(2,1,1)
     plt.imshow(image1, cmap='gray')
     fig.add_subplot(2,1,2)
-    plt.imshow(image2, cmap='gray', vmin=0, vmax=255)
+    plt.imshow(image2, cmap='gray')
     plt.show()
