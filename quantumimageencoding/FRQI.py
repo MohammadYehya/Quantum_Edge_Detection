@@ -14,7 +14,8 @@ class FRQI(QuantumEncoder):
             This function encodes the corresponding angle values of each element
             onto the Quantum Circuit.
         '''
-        angles = numpy.arcsin(numpy.array(image) / 255)
+        # angles = numpy.arcsin(numpy.array(image) / 255)
+        angles = numpy.arcsin(numpy.array(image))   #To deal with binary images
         angles = angles.reshape(angles.shape[0]**2)
 
         controlbits = int(numpy.log2(angles.shape[0]))
@@ -68,6 +69,7 @@ class FRQI(QuantumEncoder):
     
         retrieved_image = numpy.real(retrieved_image)
         retrieved_image *= picture_side * 255.0
+        retrieved_image = numpy.floor((retrieved_image/100))    #To deal with binary images
         retrieved_image = retrieved_image.astype(numpy.uint8)
         retrieved_image = retrieved_image.reshape((picture_side, picture_side))
         return Image.fromarray(retrieved_image)
