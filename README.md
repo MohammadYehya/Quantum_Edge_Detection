@@ -2,7 +2,12 @@
  
  ![Quantum_Edge_Detection](assets/images/Logo.png)
  
- ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+ ![Python](https://img.shields.io/badge/Python-3670A0?logo=python&logoColor=ffdd54)
+ ![Qiskit](https://img.shields.io/badge/Qiskit-%236929C4.svg?logo=Qiskit&logoColor=white)
+ ![Last Commit](https://img.shields.io/github/last-commit/mohammadyehya/Quantum_Edge_Detection)
+ ![Issues](https://img.shields.io/github/issues/mohammadyehya/Quantum_Edge_Detection)
+ ![Contributors](https://img.shields.io/github/contributors/mohammadyehya/Quantum_Edge_Detection)
+ ![Stars](https://img.shields.io/github/stars/mohammadyehya/Quantum_Edge_Detection)
  
 </div>
 
@@ -14,7 +19,6 @@ Quantum Edge Detection using different Quantum Encoding strategies which include
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [License](#license)
 - [Credits](#credits)
 
 ## Installation
@@ -41,7 +45,17 @@ Quantum Edge Detection using different Quantum Encoding strategies which include
 
 ## Features
 
-If your project has a lot of features, list them here.
+The main features of the project are the encoding strategies. There are 3 functional classes, the BaseEncoding class, QPIE class, & FRQI class. 
+
+The QPIE class has the encode function which takes an image and encodes it onto a Quantum circuit as shown below.
+
+![](assets/images/QPIE.png)
+
+The FRQI class is more complicated and requires a chain of CRy gates for each pixel as shown below.
+
+![](assets/images/FRQI.png)
+
+For comparision against classical methods, you can use the Sobel Edge Detection method which is located in the `sobel.py` file. Also, a utility function was created for fast comparision between images which can be found in `utils.py`.
 
 ## How to Contribute
 Contributions are welcome! Please open an issue or submit a pull request with your changes.
@@ -62,5 +76,10 @@ Distributed under the AGPLv3 License. See LICENSE for more information.
 
 ### References
 
-https://arxiv.org/pdf/2404.06889
-https://medium.com/mit-6-s089-intro-to-quantum-computing/quantum-image-processing-quantum-probability-image-encoding-qpie-and-quantum-hadamard-edge-df7bd3dc7f8
+[EDGE DETECTION QUANTUMIZED: A NOVEL QUANTUM ALGORITHM FOR IMAGE PROCESSING](https://arxiv.org/pdf/2404.06889)
+
+[Quantum Image Processing](https://arxiv.org/pdf/2203.01831)
+
+[Quantum Image Processing and Its Application to Edge Detection: Theory and Experiment](https://arxiv.org/pdf/1801.01465)
+
+[Quantum Image Processing: Quantum Probability Image Encoding (QPIE) and Quantum Hadamard Edge Detection](https://medium.com/mit-6-s089-intro-to-quantum-computing/quantum-image-processing-quantum-probability-image-encoding-qpie-and-quantum-hadamard-edge-df7bd3dc7f8)
