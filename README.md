@@ -1,4 +1,5 @@
-# Quantum_Edge_Detection
+![Quantum_Edge_Detection](assets/images/Logo.png)
+---
 Quantum Edge Detection using different Quantum Encoding strategies which include Flexible Representation of Quantum Images (FRQI), Novel Enhanced Quantum Representation (NEQR) and Quantum Probabilty Image Encoding (QPIE) along with a modified Quantum Hadamard Edge Detection (QHED) Algorithm. It is also my 7th semester project for the course CS4084 Quantum Computing.
 
 ## Table of Contents (Optional)
@@ -15,36 +16,20 @@ Quantum Edge Detection using different Quantum Encoding strategies which include
  git clone https://github.com/mohammadyehya/Quantum_Edge_Detection.git
 ```
 
-2. Install dependencies:
+2. If using python version then first setup and activate your virtual environment
+```bash
+ python -m venv venv
+ venv\Scripts\activate.bat
+```
+3. Install dependencies:
 ```bash
  pip install -r requirements.txt
  ```
 
 ## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
+1. If using notebook version then run cells as is. (Recommended)
+2. For python version, the code is written in `main.py`, and simply run `python main.py` to execute the file. (Not recommended as there are some bugs for this version)
 ---
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
 ## Badges
 
@@ -60,6 +45,14 @@ If your project has a lot of features, list them here.
 
 If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
-## Tests
+## License
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+
+## Credits
+
+List your collaborators, if any, with links to their GitHub profiles.
+
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+
+If you followed tutorials, include links to those here as well.
