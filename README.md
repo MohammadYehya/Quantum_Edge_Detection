@@ -1,4 +1,11 @@
-![Quantum_Edge_Detection](assets/images/Logo.png)
+<div align="center">
+ 
+ ![Quantum_Edge_Detection](assets/images/Logo.png)
+ 
+ ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+ 
+</div>
+
 ---
 Quantum Edge Detection using different Quantum Encoding strategies which include Flexible Representation of Quantum Images (FRQI), Novel Enhanced Quantum Representation (NEQR) and Quantum Probabilty Image Encoding (QPIE) along with a modified Quantum Hadamard Edge Detection (QHED) Algorithm. It is also my 7th semester project for the course CS4084 Quantum Computing.
 
@@ -31,28 +38,24 @@ Quantum Edge Detection using different Quantum Encoding strategies which include
 2. For python version, the code is written in `main.py`, and simply run `python main.py` to execute the file. (Not recommended as there are some bugs for this version)
 ---
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
 ## Features
 
 If your project has a lot of features, list them here.
 
 ## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+Contributions are welcome! Please open an issue or submit a pull request with your changes.
 
 ## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+Distributed under the AGPLv3 License. See LICENSE for more information.
 
 ## Credits
+### Collaborators
 
-List your collaborators, if any, with links to their GitHub profiles.
+<a href="https://github.com/mohammadyehya/Quantum_Edge_Detection/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mohammadyehya/Quantum_Edge_Detection" />
+</a>
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+### Papers & References
 
-If you followed tutorials, include links to those here as well.
+https://arxiv.org/pdf/2404.06889
+https://medium.com/mit-6-s089-intro-to-quantum-computing/quantum-image-processing-quantum-probability-image-encoding-qpie-and-quantum-hadamard-edge-df7bd3dc7f8
