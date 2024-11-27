@@ -13,8 +13,9 @@ Quantum Edge Detection using different Quantum Encoding strategies which include
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Features](#features)
 - [License](#license)
+- [Credits](#credits)
 
 ## Installation
 
@@ -55,7 +56,7 @@ Distributed under the AGPLv3 License. See LICENSE for more information.
   <img src="https://contrib.rocks/image?repo=mohammadyehya/Quantum_Edge_Detection" />
 </a>
 
-### Papers & References
+### References
 
 https://arxiv.org/pdf/2404.06889
 https://medium.com/mit-6-s089-intro-to-quantum-computing/quantum-image-processing-quantum-probability-image-encoding-qpie-and-quantum-hadamard-edge-df7bd3dc7f8
