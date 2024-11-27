@@ -45,8 +45,7 @@ class QPIE(QuantumEncoder):
         self.Qcirc2.unitary(unitaryMatrix, range(controlbits+1))
         self.Qcirc2.h(0)
 
-        # print(self.Qcirc)
-        # self.Qcirc2.draw('mpl', fold=-1)
+        return self.Qcirc
 
     def decode(self, simulator : str, shots: int = 2**16) -> Image.Image :
         pass

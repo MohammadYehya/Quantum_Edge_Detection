@@ -83,8 +83,7 @@ class FRQI(QuantumEncoder):
         self.Qcirc2.unitary(unitaryMatrix, range(controlbits+1))
         self.Qcirc2.h(0)
 
-        # self.Qcirc.measure(0,0)
-        # self.Qcirc2.measure(0,0)
+        return self.Qcirc
 
     # def decode(self, simulator : str, shots: int = 2**16) -> Image.Image:
     #     n = [i for i in range(self.Qcirc.num_qubits)]
