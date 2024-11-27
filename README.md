@@ -46,8 +46,12 @@ If your project has a lot of features, list them here.
 ## How to Contribute
 Contributions are welcome! Please open an issue or submit a pull request with your changes.
 
+<!-- >
+
 ## License
 Distributed under the AGPLv3 License. See LICENSE for more information.
+
+< -->
 
 ## Credits
 ### Collaborators
