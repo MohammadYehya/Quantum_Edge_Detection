@@ -51,7 +51,7 @@ The QPIE class has the encode function which takes an image and encodes it onto 
 
 ![](assets/images/QPIE.png)
 
-The FRQI class is more complicated and requires a chain of CRy gates for each pixel as shown below.
+The FRQI class also has the encode function but is more complicated and requires a chain of CRy gates for each pixel as shown below.
 
 ![](assets/images/FRQI.png)
 
