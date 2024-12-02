@@ -63,7 +63,7 @@ Contributions are welcome! Please open an issue or submit a pull request with yo
 <!-- >
 
 ## License
-Distributed under the AGPLv3 License. See LICENSE for more information.
+Distributed under the AGPLv3 License. See LICENSE for more information.hi
 
 < -->
 
