@@ -41,7 +41,6 @@ Quantum Edge Detection using different Quantum Encoding strategies which include
 ## Usage
 1. If using notebook version then run cells as is. (Recommended)
 2. For python version, the code is written in `main.py`, and simply run `python main.py` to execute the file. (Not recommended as there are some bugs for this version)
----
 
 ## Features
 
